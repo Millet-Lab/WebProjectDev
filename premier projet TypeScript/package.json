@@ -1,0 +1,33 @@
+{
+  "name": "be.milletdev.api",
+  "version": "1.0.0",
+  "description": "My first experimental API",
+  "keywords": [
+    "apitest"
+  ],
+  "homepage": "https://github.com/Millet-Lab/WebProjectDev#readme",
+  "bugs": {
+    "url": "https://github.com/Millet-Lab/WebProjectDev/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Millet-Lab/WebProjectDev.git"
+  },
+  "license": "ISC",
+  "author": "Hermann Millet NJIA FEUNKEU",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node build/main.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q build/main.js\"",
+    "build": "npx tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  }
+}
